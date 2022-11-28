@@ -1,0 +1,40 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #222 url("../images/baseline_brightness_1_black_18dp.png") repeat
+    center;
+  font-family: "Source Han Sans", "Noto Sans CJK", "Microsoft YaHei UI",
+    "Microsoft YaHei", "Microsoft JhengHei UI", "Microsoft JhengHei",
+    "PingFang SC", "PingFang TC", "PingFang HK", "Apple LiGothic", "Meiryo",
+    "Hiragino Kaku Gothic Pro", "Segoe UI", "STXihei", "Hei", "黑体", "SimSun";
+  font-weight: lighter;
+}
+
+:root {
+  color-scheme: light dark;
+  background: white;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: black;
+    color: white;
+  }
+}
+
+#helloworld {
+  color: #ff0;
+  font-weight: lighter;
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 500px) {
+  #helloworld {
+    margin-left: 0%;
+  }
+}
